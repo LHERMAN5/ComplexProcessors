@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player.png-b5d0d7ce8095f784980772364b6a4934.stex"
+path="res://.import/wall_with_torch.png-e533b987f1c1ccc6ce2ec34a324e1301.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Castle Level 1/player.png"
-dest_files=[ "res://.import/player.png-b5d0d7ce8095f784980772364b6a4934.stex" ]
+source_file="res://wall_with_torch.png"
+dest_files=[ "res://.import/wall_with_torch.png-e533b987f1c1ccc6ce2ec34a324e1301.stex" ]
 
 [params]
 
