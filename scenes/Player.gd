@@ -15,6 +15,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print(area2d.currentPos)
+	#print(area2d.currentPos)
 	#position = area.currentPos
-#	pass
+	pass
