@@ -9,6 +9,13 @@ onready var tile6 = get_node("/root/Combat/Area2D6/Space6")
 onready var tile7 = get_node("/root/Combat/Area2D7/Space7")
 onready var tile8 = get_node("/root/Combat/Area2D8/Space8")
 
+func initilize_color():
+	var tiles = [tile1,tile2,tile3,tile4,tile5,tile6,tile7,tile8]
+	
+	for tile in tiles:
+		tile.modulate =  Color( 0, 255, 255, 255 )
+	yield(get_tree().create_timer(0.5), "timeout")
+		
 func boss_windup(difficulty):
 	
 	var tiles = [tile1,tile2,tile3,tile4,tile5,tile6,tile7,tile8]
@@ -22,18 +29,26 @@ func boss_windup(difficulty):
 		tiles.erase(choice)
 	
 	flash(attacked_tiles)
-	yield(get_tree().create_timer(1.0), "timeout")
-	flash(attacked_tiles)
+	
 
 func flash(tiles):
 	for tile in tiles:
 		tile.modulate =  Color( 255, 255, 255, 255 )
 		
-	yield(get_tree().create_timer(1.0), "timeout")
+	yield(get_tree().create_timer(0.75), "timeout")
 	
 	for tile in tiles:
 		tile.modulate =  Color( 0, 255, 255, 255 )
-
+	
+	yield(get_tree().create_timer(0.75), "timeout")
+	
+	for tile in tiles:
+		tile.modulate =  Color( 255, 255, 255, 255 )
+		
+	yield(get_tree().create_timer(0.75), "timeout")
+		
+	for tile in tiles:
+		tile.modulate =  Color( 0, 255, 255, 255 )
 	
 	
 # Declare member variables here. Examples:
@@ -43,6 +58,7 @@ func flash(tiles):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	initilize_color()
 	boss_windup(3) # Replace with function body.
 
 
