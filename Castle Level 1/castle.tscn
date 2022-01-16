@@ -1,8 +1,38 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://FloorTile.png" type="Texture" id=1]
 [ext_resource path="res://player.png" type="Texture" id=2]
 [ext_resource path="res://Player.gd" type="Script" id=3]
+[ext_resource path="res://wall.png" type="Texture" id=4]
+[ext_resource path="res://littleWall.png" type="Texture" id=5]
+[ext_resource path="res://ground.png" type="Texture" id=6]
+[ext_resource path="res://wall_with_torch.png" type="Texture" id=7]
+[ext_resource path="res://door.png" type="Texture" id=8]
+[ext_resource path="res://side_table.png" type="Texture" id=9]
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="TileSet" id=1]
 0/name = "FloorTile.png 0"
@@ -19,9 +49,164 @@
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
+1/name = "wall.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 3 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "ground.png 2"
+2/texture = ExtResource( 6 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "littleWall.png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 4 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "wall.png 4"
+4/texture = ExtResource( 4 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 7 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "wall_with_torch.png 5"
+5/texture = ExtResource( 7 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 8 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "side_table.png 6"
+6/texture = ExtResource( 9 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 9 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "door.png 7"
+7/texture = ExtResource( 8 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 10 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 117, 272.248 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 25.25, 24.75 )
 
 [node name="Basic Castle" type="Node2D"]
 
@@ -29,22 +214,44 @@ extents = Vector2( 117, 272.248 )
 position = Vector2( -1, -1 )
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 0, 0, 0, 2, 0, 0, 4, 0, 0, 6, 0, 0, 8, 0, 0, 10, 0, 0, 12, 0, 0, 131072, 0, 0, 131074, 0, 0, 131076, 0, 0, 131078, 0, 0, 131080, 0, 0, 131082, 0, 0, 131084, 0, 0, 262144, 0, 0, 262146, 0, 0, 262148, 0, 0, 262150, 0, 0, 262152, 0, 0, 262154, 0, 0, 262156, 0, 0, 393216, 0, 0, 393218, 0, 0, 393220, 0, 0, 393222, 0, 0, 393224, 0, 0, 393226, 0, 0, 393228, 0, 0 )
+tile_data = PoolIntArray( 65535, 3, 0, 0, 3, 0, 1, 3, 0, 2, 3, 0, 3, 3, 0, 4, 3, 0, 5, 7, 0, 7, 3, 0, 8, 3, 0, 9, 3, 0, 10, 3, 0, 11, 3, 0, 12, 3, 0, 13, 3, 0, 14, 3, 0, 15, 3, 0, 16, 7, 0, 18, 3, 0, 19, 3, 0, 20, 3, 0, 21, 3, 0, 22, 3, 0, 131071, 3, 0, 65536, 3, 0, 65537, 3, 0, 65538, 3, 0, 65539, 3, 0, 65540, 3, 0, 65543, 3, 0, 65544, 3, 0, 65545, 3, 0, 65546, 3, 0, 65547, 3, 0, 65548, 3, 0, 65549, 3, 0, 65550, 3, 0, 65551, 3, 0, 65554, 3, 0, 65555, 3, 0, 65556, 3, 0, 65557, 3, 0, 65558, 3, 0, 196607, 3, 0, 131072, 0, 0, 131074, 0, 0, 131076, 0, 0, 131078, 0, 0, 131080, 0, 0, 131082, 0, 0, 131084, 0, 0, 131086, 0, 0, 131088, 0, 0, 131090, 0, 0, 131092, 0, 0, 131094, 3, 0, 262143, 3, 0, 196630, 3, 0, 327679, 3, 0, 262144, 0, 0, 262146, 0, 0, 262148, 0, 0, 262150, 0, 0, 262152, 0, 0, 262154, 0, 0, 262156, 0, 0, 262158, 0, 0, 262160, 0, 0, 262162, 0, 0, 262164, 0, 0, 262166, 3, 0, 393215, 3, 0, 327702, 3, 0, 327721, 3, 0, 327722, 3, 0, 327723, 3, 0, 327724, 3, 0, 327725, 3, 0, 327726, 3, 0, 327727, 3, 0, 327728, 3, 0, 458751, 3, 0, 393216, 3, 0, 393217, 3, 0, 393218, 3, 0, 393219, 3, 0, 393220, 3, 0, 393221, 3, 0, 393222, 3, 0, 393223, 3, 0, 393224, 3, 0, 393225, 3, 0, 393226, 3, 0, 393227, 3, 0, 393228, 3, 0, 393229, 3, 0, 393230, 3, 0, 393231, 3, 0, 393232, 3, 0, 393233, 3, 0, 393234, 0, 0, 393236, 0, 0, 393238, 3, 0, 393257, 3, 0, 393258, 0, 0, 393260, 0, 0, 393262, 0, 0, 393264, 3, 0, 458769, 3, 0, 458774, 3, 0, 458781, 3, 0, 458782, 3, 0, 458783, 3, 0, 458784, 3, 0, 458785, 3, 0, 458786, 3, 0, 458787, 3, 0, 458788, 3, 0, 458789, 3, 0, 458790, 3, 0, 458791, 3, 0, 458792, 3, 0, 458793, 3, 0, 458800, 3, 0, 524305, 3, 0, 524306, 0, 0, 524308, 0, 0, 524310, 3, 0, 524317, 3, 0, 524318, 0, 0, 524320, 0, 0, 524322, 0, 0, 524324, 0, 0, 524326, 0, 0, 524328, 0, 0, 524330, 0, 0, 524332, 0, 0, 524334, 0, 0, 524336, 3, 0, 589841, 3, 0, 589846, 3, 0, 589853, 3, 0, 589872, 3, 0, 655377, 3, 0, 655378, 0, 0, 655380, 0, 0, 655382, 3, 0, 655389, 3, 0, 655390, 0, 0, 655392, 0, 0, 655394, 0, 0, 655396, 0, 0, 655398, 3, 0, 655399, 3, 0, 655400, 3, 0, 655401, 3, 0, 655402, 3, 0, 655403, 3, 0, 655404, 3, 0, 655405, 3, 0, 655406, 3, 0, 655407, 3, 0, 655408, 3, 0, 720913, 3, 0, 720918, 3, 0, 720919, 3, 0, 720920, 3, 0, 720921, 3, 0, 720922, 3, 0, 720923, 3, 0, 720924, 3, 0, 720925, 3, 0, 720934, 3, 0, 786449, 3, 0, 786450, 0, 0, 786452, 0, 0, 786454, 0, 0, 786456, 0, 0, 786458, 0, 0, 786460, 0, 0, 786462, 0, 0, 786464, 0, 0, 786466, 0, 0, 786468, 0, 0, 786470, 3, 0, 851985, 3, 0, 852006, 3, 0, 917521, 3, 0, 917522, 0, 0, 917524, 0, 0, 917526, 0, 0, 917528, 0, 0, 917530, 0, 0, 917532, 0, 0, 917534, 0, 0, 917536, 0, 0, 917538, 0, 0, 917540, 0, 0, 917542, 3, 0, 983057, 3, 0, 983078, 3, 0, 1048593, 3, 0, 1048594, 3, 0, 1048595, 3, 0, 1048596, 3, 0, 1048597, 3, 0, 1048598, 3, 0, 1048599, 3, 0, 1048600, 3, 0, 1048601, 3, 0, 1048602, 3, 0, 1048603, 3, 0, 1048604, 3, 0, 1048605, 3, 0, 1048606, 3, 0, 1048607, 3, 0, 1048608, 3, 0, 1048609, 3, 0, 1048610, 3, 0, 1048611, 3, 0, 1048612, 3, 0, 1048613, 3, 0, 1048614, 3, 0 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
 position = Vector2( 7, 4 )
 script = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( 423, 184 )
+position = Vector2( 259, 160 )
 current = true
 
 [node name="Player" type="Sprite" parent="Player"]
-position = Vector2( 422.25, 178.25 )
+position = Vector2( 258.25, 154.25 )
 scale = Vector2( 0.200855, 0.11203 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 424.25, 183.25 )
+position = Vector2( 260.25, 159.25 )
 scale = Vector2( 0.200855, 0.11203 )
 shape = SubResource( 2 )
+
+[node name="SideTable 1" type="KinematicBody2D" parent="."]
+
+[node name="SideTable" type="Sprite" parent="SideTable 1"]
+position = Vector2( 466, 126 )
+scale = Vector2( 1.1875, 1.25 )
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SideTable 1"]
+position = Vector2( 467, 129 )
+shape = SubResource( 11 )
+
+[node name="SideTable 2" type="KinematicBody2D" parent="."]
+
+[node name="SideTable" type="Sprite" parent="SideTable 2"]
+position = Vector2( 1170, 122 )
+scale = Vector2( 1.1875, 1.25 )
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SideTable 2"]
+position = Vector2( 1167, 126 )
+shape = SubResource( 11 )
