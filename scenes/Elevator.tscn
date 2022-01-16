@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://sprites/elevator.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Elevator.gd" type="Script" id=2]
+[ext_resource path="res://scenes/Combat.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 64, 74 )
@@ -92,6 +93,7 @@ tracks/1/keys = {
 collision_layer = 0
 monitorable = false
 script = ExtResource( 2 )
+next_scene = ExtResource( 3 )
 
 [node name="Portal" type="Sprite" parent="."]
 position = Vector2( 0, -64 )
