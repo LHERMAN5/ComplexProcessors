@@ -56,10 +56,12 @@ func flash(tiles):
 # var b = "text"
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	initilize_color()
 	boss_windup(3) # Replace with function body.
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
