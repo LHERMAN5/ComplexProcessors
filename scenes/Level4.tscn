@@ -264,6 +264,7 @@ position = Vector2( 298, 243 )
 visible = false
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+z_index = 2
 frames = SubResource( 13 )
 frame = 2
 playing = true
