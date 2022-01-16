@@ -265,7 +265,7 @@ visible = false
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 13 )
-frame = 1
+frame = 2
 playing = true
 flip_h = true
 
@@ -286,7 +286,7 @@ position = Vector2( 2111, -833 )
 next_scene = ExtResource( 9 )
 
 [node name="Enemy" type="AnimatedSprite" parent="."]
-position = Vector2( 2109, -798 )
+position = Vector2( 2108, -848 )
 frames = SubResource( 14 )
 animation = "Mage"
 frame = 1
