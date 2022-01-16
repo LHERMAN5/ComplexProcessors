@@ -251,7 +251,7 @@ tile_data = PoolIntArray( -1245187, 3, 0, -1245186, 3, 0, -1245185, 3, 0, -13107
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 298, 243 )
 
-[node name="AnimatedSprite" parent="Player" index="0"]
+[node name="Animation" parent="Player" index="0"]
 frame = 1
 
 [node name="Elevator" parent="." instance=ExtResource( 8 )]

@@ -214,20 +214,6 @@ tile_data = PoolIntArray( -196610, 3, 0, -196609, 3, 0, -262144, 3, 0, -262143, 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 298, 243 )
 
-[node name="AnimatedSprite" parent="Player" index="0"]
-frame = 0
-
-[node name="SideTable 1" type="KinematicBody2D" parent="."]
-
-[node name="SideTable" type="Sprite" parent="SideTable 1"]
-position = Vector2( 466, 126 )
-scale = Vector2( 1.1875, 1.25 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SideTable 1"]
-position = Vector2( 467, 129 )
-shape = SubResource( 11 )
-
 [node name="SideTable 2" type="KinematicBody2D" parent="."]
 
 [node name="SideTable" type="Sprite" parent="SideTable 2"]

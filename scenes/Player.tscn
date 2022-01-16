@@ -19,7 +19,7 @@ extents = Vector2( 34.5, 51 )
 collision_mask = 2
 script = ExtResource( 2 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="Animation" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -55 )
 frames = SubResource( 2 )
 playing = true
@@ -30,6 +30,5 @@ position = Vector2( -0.5, -51 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-visible = false
 current = true
 limit_left = 0
