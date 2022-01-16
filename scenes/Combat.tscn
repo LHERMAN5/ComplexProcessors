@@ -118,9 +118,9 @@ shape = SubResource( 1 )
 
 [node name="ItemList" type="ItemList" parent="."]
 margin_left = 57.0
-margin_top = 411.0
-margin_right = 376.0
-margin_bottom = 530.0
+margin_top = 414.0
+margin_right = 126.0
+margin_bottom = 477.0
 items = [ "Move", null, false, "Wind Up", null, false, "Attack", null, false ]
 __meta__ = {
 "_edit_use_anchors_": false
