@@ -18,10 +18,10 @@ texture = ExtResource( 3 )
 script = ExtResource( 5 )
 
 [node name="PlayerHealth" parent="Player" instance=ExtResource( 2 )]
-margin_left = -105.0
-margin_top = -157.0
-margin_right = 291.0
-margin_bottom = -242.0
+margin_left = -53.0
+margin_top = -68.0
+margin_right = 343.0
+margin_bottom = -153.0
 rect_scale = Vector2( 0.2, 0.2 )
 
 [node name="Enemy" type="Sprite" parent="."]
@@ -30,10 +30,10 @@ z_index = 1
 texture = ExtResource( 3 )
 
 [node name="EnemyHealth" parent="Enemy" instance=ExtResource( 2 )]
-margin_left = -105.0
-margin_top = -155.0
-margin_right = 291.0
-margin_bottom = -242.0
+margin_left = -56.0
+margin_top = -75.0
+margin_right = 340.0
+margin_bottom = -162.0
 rect_scale = Vector2( 0.2, 0.2 )
 
 [node name="Area2D" type="Area2D" parent="."]
