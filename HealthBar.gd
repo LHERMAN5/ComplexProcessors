@@ -1,7 +1,7 @@
 extends Control
 
-onready var health_bar = $HealthOver
-onready var health_bar = $HealthUnder
+onready var health_over = $HealthOver
+onready var health_under = $HealthUnder
 onready var update_tween = $UpdateTween
 
 func _on_health_updated(health,amount):

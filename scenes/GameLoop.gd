@@ -9,6 +9,8 @@ onready var tile6 = get_node("/root/Combat/Area2D6/Space6")
 onready var tile7 = get_node("/root/Combat/Area2D7/Space7")
 onready var tile8 = get_node("/root/Combat/Area2D8/Space8")
 
+var playerTurn = false
+
 func initilize_color():
 	var tiles = [tile1,tile2,tile3,tile4,tile5,tile6,tile7,tile8]
 	
@@ -61,6 +63,7 @@ func flash(tiles):
 func _ready():
 	initilize_color()
 	boss_windup(3) # Replace with function body.
+	playerTurn=true
 	
 
 
