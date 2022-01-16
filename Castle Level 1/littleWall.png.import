@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/littleWall.png-adcf50a319539b2ab2a633b50e0ea0c1.stex"
+path="res://.import/littleWall.png-62102600c798313c0e18cf93a655d6f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://littleWall.png"
-dest_files=[ "res://.import/littleWall.png-adcf50a319539b2ab2a633b50e0ea0c1.stex" ]
+source_file="res://Castle Level 1/littleWall.png"
+dest_files=[ "res://.import/littleWall.png-62102600c798313c0e18cf93a655d6f1.stex" ]
 
 [params]
 
@@ -28,7 +28,6 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
-process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
