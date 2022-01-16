@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://sprites/elevator_blank.png" type="Texture" id=1]
 [ext_resource path="res://sprites/side_table.png" type="Texture" id=2]
@@ -6,13 +6,9 @@
 [ext_resource path="res://sprites/wall.png" type="Texture" id=4]
 [ext_resource path="res://sprites/door.png" type="Texture" id=5]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=6]
-[ext_resource path="res://sprites/Goblin2.png" type="Texture" id=7]
+[ext_resource path="res://sprites/CarpetTile.png" type="Texture" id=7]
 [ext_resource path="res://scenes/Elevator.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/End.tscn" type="PackedScene" id=9]
-[ext_resource path="res://sprites/Goblin6.png" type="Texture" id=10]
-[ext_resource path="res://sprites/Goblin3.png" type="Texture" id=11]
-[ext_resource path="res://sprites/Mage1.png" type="Texture" id=12]
-[ext_resource path="res://sprites/Mage2.png" type="Texture" id=13]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -229,25 +225,20 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
-
-[sub_resource type="SpriteFrames" id=13]
-animations = [ {
-"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 25.25, 24.75 )
-
-[sub_resource type="SpriteFrames" id=14]
-animations = [ {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "Mage",
-"speed": 5.0
-} ]
+9/name = "CarpetTile.png 9"
+9/texture = ExtResource( 7 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 128, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
 
 [node name="Level4" type="Node2D"]
 
@@ -260,38 +251,11 @@ tile_data = PoolIntArray( -1245187, 3, 0, -1245186, 3, 0, -1245185, 3, 0, -13107
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 298, 243 )
 
-[node name="Player" parent="Player" index="0"]
-visible = false
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
-z_index = 2
-frames = SubResource( 13 )
-frame = 2
-playing = true
-flip_h = true
-
-[node name="SideTable 1" type="KinematicBody2D" parent="."]
-position = Vector2( -110, 8 )
-
-[node name="SideTable" type="Sprite" parent="SideTable 1"]
-position = Vector2( 466, 126 )
-scale = Vector2( 1.1875, 1.25 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SideTable 1"]
-position = Vector2( 467, 129 )
-shape = SubResource( 11 )
+[node name="Animation" parent="Player" index="0"]
+frame = 1
 
 [node name="Elevator" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2111, -833 )
 next_scene = ExtResource( 9 )
-
-[node name="Enemy" type="AnimatedSprite" parent="."]
-position = Vector2( 2108, -848 )
-frames = SubResource( 14 )
-animation = "Mage"
-frame = 1
-speed_scale = 0.5
-playing = true
 
 [editable path="Player"]
