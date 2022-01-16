@@ -1,13 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://player.png" type="Texture" id=1]
-[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://sprites/player.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 31, 40 )
+extents = Vector2( 31.4375, 43.4375 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 3, -1 )
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Player" type="Sprite" parent="."]
@@ -16,5 +17,10 @@ scale = Vector2( 0.267094, 0.143985 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.125, 0.875004 )
+position = Vector2( -0.5625, -2.5625 )
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 0
