@@ -12,10 +12,9 @@ extents = Vector2( 80, 80 )
 [node name="Combat" type="Node2D"]
 
 [node name="Player" type="Sprite" parent="."]
-position = Vector2( 561, 541 )
+position = Vector2( 512, 460 )
 z_index = 1
 texture = ExtResource( 3 )
-offset = Vector2( -49, -81 )
 script = ExtResource( 5 )
 
 [node name="PlayerHealth" parent="Player" instance=ExtResource( 2 )]
@@ -26,10 +25,9 @@ margin_bottom = -242.0
 rect_scale = Vector2( 0.2, 0.2 )
 
 [node name="Enemy" type="Sprite" parent="."]
-position = Vector2( 561, 381 )
+position = Vector2( 512, 300 )
 z_index = 1
 texture = ExtResource( 3 )
-offset = Vector2( -49, -81 )
 
 [node name="EnemyHealth" parent="Enemy" instance=ExtResource( 2 )]
 margin_left = -105.0
